@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, Aria, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+.main-menu {
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	background-color: #eeeeee;
+	font-weight: medium;
+}
+.site-menu {
+	list-style: none;
+}
+.site-menu a,
+.cart a {
+	color: #000000;
+}
+
+.site-menu a:hover,
+.site-menu a:focus,
+.cart a:hover,
+.cart a:focus {
+    color: #fb565a;
+}
+.site-menu a:active,
+.cart a:active {
+	color: #a6a6a6;
+}
+.slide1 strong,
+.slide2 strong,
+.slide3 strong {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: medium;
+}
+.slide1 p,
+.slide2 p,
+.slide3 p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: regular;
+}
+.button {
+	font-size: 16px;
+	line-height: 18x;
+	font-weight: medium;
+}
+.serviсe-list {
+	list-style: none;
+}
+.serviсe-list h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.serviсe-list p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: regular;
+}
+
+.information b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+}
+.information p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: regular;
+}
+.serviСe-orders {
+	font-size: 16px;
+	line-height: 24px;
+}
+.statistical-data b {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.list-benefits li {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: bold;
+}
+.list-benefits p {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: regular;
+}
+.contact-box {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: regular;
+}
+.contact-box h3 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.call b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+}
+.call p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: regular;
+}
+.communication {
+
+}
+.communication p {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+}
+.communication label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.communication label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: regular;
+	color: #a1a1a1;
+}

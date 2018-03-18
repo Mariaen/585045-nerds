@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css\normalize.css">
   </head>
   <body>
     <header class="main-header">
@@ -53,9 +55,9 @@
                 <label for="gallery">Галерея</label></li>
                 <li><input type="checkbox" name="features" id="cart">
                 <label for="cart">Корзина</label></li>
-              </ul>  
+              </ul>
+              <input class="button" type="submit" value="ПОКАЗАТЬ">  
             </section>
-            <input type="submit" value="ПОКАЗАТЬ">  
           </div>
         </form>
           <div>
@@ -63,8 +65,8 @@
               <p>СОРТИРОВАТЬ:</p>
               <a href="#">по цене</a>
               <a href="#">по типу</a>
-              <a href="">по названию</a>
-              <a href=""><img src="img\icon-down-dir.svg"></a>
+              <a href="#">по названию</a>
+              <a href="#"><img src="img\icon-down-dir.svg"></a>
               <a href=""><img src="img\icon-up-dir.svg"></a>
             </section>
             <section class="product-list">
@@ -76,7 +78,7 @@
                 <li><a href="#"><img src="img\img-mishka.jpg"  width="" height="" alt="Mischka"></a></li>
                 <li><a href="#"><img src="img\img-pink.jpg"  width="" height="" alt="Pink"></a></li>
               </ul>
-              <ul>
+              <ul class="list-pages">
                 <li><a class="button">1</a></li>
                 <li><a href="#" class="button">2</a></li>
                 <li><a href="#" class="button">3</a></li>
@@ -122,41 +124,41 @@
             <p><button type="submit">ОТПРАВИТЬ</button></p>    
           </form>
         </section>  
-
+        <div class="product-prices">
         <article class="price1">
           <img src="img\browser.svg">
           <div class="h-box">
           <h2>SEDONA</h2>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="#" class="button">9900РУБ.</a>
-          </div>
-        </article>
-
-        <article class="price4">
-          <img src="img\browser.svg">
-          <div class="h-box">
-          <h2>PINK APP</h2>
-          <p>Продуктовый лендинг приложения для iOS и ANDROID</p>
-          <a href="#">9900РУБ.</a>
+          <a href="#" class="button button-buy">9900РУБ.</a>
           </div>
         </article>
 
         <article class="price2">
           <img src="img\browser.svg">
           <div class="h-box">
-          <h2>BARBERSHOP</h2>
-          <p>Сайт салона красоты.
-          Для мужчин,да.</p>
-          <a href="#">9900РУБ.</a>
+          <h2>PINK APP</h2>
+          <p>Продуктовый лендинг приложения для iOS и ANDROID</p>
+          <a href="#" class="button button-buy">9900РУБ.</a>
           </div>
         </article>
 
         <article class="price3">
           <img src="img\browser.svg">
           <div class="h-box">
+          <h2>BARBERSHOP</h2>
+          <p>Сайт салона красоты.
+          Для мужчин,да.</p>
+          <a href="#" class="button button-buy">9900РУБ.</a>
+          </div>
+        </article>
+
+        <article class="price4">
+          <img src="img\browser.svg">
+          <div class="h-box">
           <h2>Mischka</h2>
           <p>Интернет-магазин вязаных игрушек</p>
-          <a href="#">9900РУБ.</a>
+          <a href="#" class="button button-buy">9900РУБ.</a>
           </div>
         </article>
 
@@ -165,7 +167,7 @@
           <div class="h-box">
           <h2>A PLUS</h2>
           <p>Лендинг курсов повышения квалификации</p>
-          <a href="#">9900РУБ.</a>
+          <a href="#" class="button button-buy">9900РУБ.</a>
           </div>
         </article>
 
@@ -174,7 +176,7 @@
           <div class="h-box">
           <h2>КВАСТ</h2>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="#">9900РУБ.</a>
+          <a href="#" class="button button-buy">9900РУБ.</a>
           </div>
         </article> 
     </body>
