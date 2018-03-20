@@ -155,7 +155,7 @@ a {
 	line-height: 22px;
 	font-weight: normal;
 }
-.communication p {
+/*.communication p {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -172,6 +172,35 @@ a {
 	color: #a1a1a1;
 }
 
+.communication input:hover,
+.communication input:focus {
+	border: 2px solid #000;
+}
+.communication input:active {
+	border: 2px solid #e74246;
+}*/
+
+.modal-form input[type="text"] { 
+  color: #d7dcde; 
+} 
+.modal-form input[type="text"]:hover { 
+  color: #b4b9bb; 
+} 
+.modal-form input[type="text"]:focus { 
+  color: #000000; 
+} 
+.modal-form input[type="text"]:invalid { 
+  color: #e74246;
+  border: 2px solid #e74246;  
+} 
+.communication .button-info {
+	color: #fecccd; 
+	background-image: url(img/close-cross.svg); 
+	background-repeat: no-repeat; 
+}
+.modal-close:hover { 
+  	color: #fb565a;
+} 
 .container h1 {
 	font-size: 55px;
 	line-height: 55px;
@@ -234,7 +263,11 @@ a {
     line-height: 18px; 
     font-weight: 500;
 	color: #fff; 
-	border-radius: 10%;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+	
 		
 }
 .product-list ul{ 
@@ -324,12 +357,34 @@ a {
 	background-color: #eee;
 }
 .container .button:hover,
-.container .button:hover {
+.container .button:focus {
 	background-color: #dfdfdf;
 }
 .container .button:active {
 	color: #959595;
 	background-color: #d5d5d5;
+}
+.footer-social li {
+ 	display:inline-block;
+ 	vertical-align:top;
+ 	margin-right: 10px;
+}
+
+.footer-social a {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 40px;
+ 	height: 40px;
+ 	border-radius: 50%;
+ 	background: gray;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+	background: #e74246;
+}
+.footer-social a:active {
+	background: #d7373b;
 }
 .slider-slides {
 	width: 300%;
@@ -353,9 +408,15 @@ a {
     border-radius: 50%;
      border: 4px solid white;
 }
-#slide1:checked ~ .slider-controls label[for="btn-1"],
-#slide2:checked ~ .slider-controls label[for="btn-2"],
-#slide3:checked ~ .slider-controls label[for="btn-3"] {
-    background-color: #666666;
+#slide1:checked ~ .slider-controls label[for="slide1"],
+#slide2:checked ~ .slider-controls label[for="slide2"],
+#slide3:checked ~ .slider-controls label[for="slide3"] {
+    background-color: #4d4d4d;
 }
+.option1 {
+	color: #283136;
+}
+.option1:hover {
+	color: #000;
+} 
 
