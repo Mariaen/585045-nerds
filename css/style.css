@@ -1,30 +1,50 @@
+html {
+	box-sizing: border-box;
+}
+*,*::before, *::after {
+ 	box-sizing: inherit;
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: Roboto, Aria, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
-
 	background-color: #ffffff;
 }
 a {
 	text-decoration: none;
 }
+.visually-hidden { 
+  	position: absolute;
+  	border: 0; 
+  	clip: rect(0 0 0 0); 
+  	height: 1px; 
+  	margin: -1px; 
+  	overflow: hidden; 
+  	padding: 0;  
+  	width: 1px; 
+} 
+.main-header {
+	background-color: #eee; 
+}
 .main-menu {
 	font-size: 16px;
 	line-height: 30px;
 	color: #000000;
-	background-color: #eeeeee;
-	font-weight: medium;
+	background-color: #eee;
+	font-weight: 500;
 }
 .site-menu {
 	list-style: none;
 }
 .site-menu a,
 .cart a {
-	color: #000000;
+	color: #000;
 }
 
 .site-menu a:hover,
@@ -42,19 +62,21 @@ a {
 .slide3 strong {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: medium;
+	font-weight: 500;
 }
 .slide1 p,
 .slide2 p,
 .slide3 p {
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: regular;
+	font-weight: normal;
 }
 .button {
 	font-size: 16px;
 	line-height: 18x;
-	font-weight: medium;
+	font-weight: 500;
+	vertical-align: middle; 
+	text-transform: uppercase; 
 }
 .serviсe-list {
 	list-style: none;
@@ -62,27 +84,31 @@ a {
 .serviсe-list h3 {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .serviсe-list p {
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: regular;
+	font-weight: normal;
 }
 
 .information b {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: medium;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 .information p {
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: regular;
+	font-weight: normal;
 }
-.serviСe-orders {
+.information .service-orders {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .statistical-data b {
 	font-size: 16px;
@@ -93,48 +119,243 @@ a {
 	font-size: 45px;
 	line-height: 10.06px;
 	font-weight: bold;
+	list-style: none;
 }
 .list-benefits p {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: normal;
+}
+.sites ul {
+	list-style: none;
+}
+.footer-bar li {
+	list-style: none;
 }
 .contact-box {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: normal;
+}
+.contacts address {
+	font-style: normal;
 }
 .contact-box h3 {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .call b {
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: bold;
+	font-weight: 700;
 }
 .call p {
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: regular;
-}
-.communication {
-
+	font-weight: normal;
 }
 .communication p {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: medium;
+	font-weight: 500;
 }
 .communication label {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
-.communication label {
+.communication input {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: regular;
+	font-weight: normal;
 	color: #a1a1a1;
 }
+
+.container h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.value p {
+	font-size: 18px; 
+    line-height: 30px; 
+    font-weight: 700; 
+}
+.outline p {
+	font-size: 18px; 
+    line-height: 30px; 
+    font-weight: 700; 
+}
+.features p  {
+	font-size: 18px; 
+    line-height: 30px; 
+    font-weight: 700;
+}
+.features ul {
+	list-style: none;
+}
+.features .button-gray:hover,
+.features .button-gray:focus {
+	color: #000;
+	background-color: #dfdfdf;
+}
+.button-order3:active { 
+	color: #959595;
+	background-color: #d5d5d5;
+} {
+
+}
+.outline label {
+	font-size: 16px; 
+    line-height: 20px; 
+    color:#283136; 
+}
+.sort p {
+	font-size: 18px; 
+    line-height: 18px; 
+    font-weight: 700;
+}
+.product-prices  h2 {
+	font-size: 18px; 
+    line-height: 30px; 
+    font-weight: 700;
+    color: #000;
+}
+.product-prices  p {
+	font-size: 16px; 
+    line-height: 18px; 
+    font-weight: normal;
+    color: #666;
+}
+.button {
+	font-size: 16px; 
+    line-height: 18px; 
+    font-weight: 500;
+	color: #fff; 
+	border-radius: 10%;
+		
+}
+.product-list ul{ 
+    list-style: none; 
+}
+.list-pages {
+	list-style: none;
+}
+.button-info {
+	color: #fff; 
+	background-color: #fb565a;
+	border-radius: 10%; 
+}
+.button-info:hover, 
+.button-info:focus { 
+	 background-color: #e74246; 
+}
+.button-info:active { 
+	color: e37376;
+	background-color: #d7373b;
+}
+.button-order1 {
+	color: #fff; 
+	background-color: #fb565a; 
+} 
+.button-order1:hover,
+.button-order1:focus {
+	background-color: #e74246;
+}
+.button-order1:active { 
+	color: e37376;
+	background-color: #d7373b;
+}
+.button-order2 {
+	color: #fff; 
+	background-color: #00ca74;
+} 
+.button-order2:hover,
+.button-order2:focus {
+	background-color: #00bc6c;
+}
+.button-order2:active { 
+	color: #4dc491;
+	background-color: #00aa62;
+}
+.button-order3 {
+	color: #fff; 
+	background-color: #efc84a;
+} 
+.button-order3:hover,
+.button-order3:focus {
+	background-color: #eab534;
+}
+.button-order3:active { 
+	color: #4dc491;
+	background-color: #e5a722;
+}
+.col .button-info {
+	color: #fff;
+	background-color: #fb565a;
+}
+.col:hover,
+.col:focus {
+	color: #000;
+	background-color: #000;
+}
+.col input {
+	color: #a1a1a1;
+	border: 2px solid #d7dcde;
+}
+.communication textarea {
+	border: 2px solid #d7dcde;
+}
+.button-buy {
+	color: #fff; 
+	background-color: #fb565a; 
+}
+.button-buy:hover, 
+.button-buy:focus { 
+	 background-color: #e74246;
+}
+.button-buy:active { 
+	background-color: #d7373b;
+}
+.container .button {
+	color: #000;
+	background-color: #eee;
+}
+.container .button:hover,
+.container .button:hover {
+	background-color: #dfdfdf;
+}
+.container .button:active {
+	color: #959595;
+	background-color: #d5d5d5;
+}
+.slider-slides {
+	width: 300%;
+}
+.slider-slides img {
+	 float: left;
+}
+.slides ul {
+	list-style: none;
+}
+.slides{
+    overflow: hidden;
+}
+.slider-controls {
+    text-align: center;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+     border: 4px solid white;
+}
+#slide1:checked ~ .slider-controls label[for="btn-1"],
+#slide2:checked ~ .slider-controls label[for="btn-2"],
+#slide3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
+}
+

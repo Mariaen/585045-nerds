@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -19,14 +20,14 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="cart">
-          <a href="#"><img src="img/cart-icon.svg" alt="Корзина"></a>
-              Корзина
+        <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+          
         </div>     
       </nav>
     </header>
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-        <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
         <div>
         <section class="value">
           <p>СТОИМОСТЬ:</p>
@@ -56,7 +57,7 @@
                 <li><input type="checkbox" name="features" id="cart">
                 <label for="cart">Корзина</label></li>
               </ul>
-              <input class="button" type="submit" value="ПОКАЗАТЬ">  
+              <input class="button-gray" type="submit" value="ПОКАЗАТЬ">  
             </section>
           </div>
         </form>
@@ -66,17 +67,17 @@
               <a href="#">по цене</a>
               <a href="#">по типу</a>
               <a href="#">по названию</a>
-              <a href="#"><img src="img\icon-down-dir.svg"></a>
-              <a href="#"><img src="img\icon-up-dir.svg"></a>
+              <a href="#"><img src="img/icon-down-dir.svg" alt="по убыванию"></a>
+              <a href="#"><img src="img/icon-up-dir.svg" alt="по возрастанию"></a>
             </section>
             <section class="product-list">
-              <ul class="product">
-                <li><a href="#"><img src="img\img-sedona.jpg"  width="" height="" alt="Sedona"></a></li>
-                <li><a href="#"><img src="img\img-aplus.jpg"  width="" height="" alt="A plus"></a></li>
-                <li><a href="#"><img src="img\img-kvast.jpg"  width="" height="" alt="Kvast"></a></li>
-                <li><a href="#"><img src="img\img-barbershop.jpg"  width="" height="" alt="Barbershop"></a></li>
-                <li><a href="#"><img src="img\img-mishka.jpg"  width="" height="" alt="Mischka"></a></li>
-                <li><a href="#"><img src="img\img-pink.jpg"  width="" height="" alt="Pink"></a></li>
+              <ul class="product"> 
+                <li><a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></a></li>
+                <li><a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="A plus"></a></li>
+                <li><a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"></a></li>
+                <li><a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></a></li>
+                <li><a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mischka"></a></li>
+                <li><a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink"></a></li>
               </ul>
               <ul class="list-pages">
                 <li><a class="button">1</a></li>
@@ -95,13 +96,13 @@
               <p>+7(812)2757575</p>
               <a class="button" href="">НАПИШИТЕ НАМ</a>
             </div>
-            <img src="img\Группа 1.png"  width="" height="" alt="Санкт-Петербург,ул.Б.Конюшенная,д. 19/8">   
+            <img src="img/Группа1.png"  width="1725" height="808" alt="Санкт-Петербург,ул.Б.Конюшенная,д. 19/8">   
           </section>     
             <div class="footer-bar">
               <ul class="footer-social">  
-                <li><a href="#" class="social-button1"><img src="img\vk-icon.svg"></a></li>
-                <li><a href="#" class="social-button2"><img src="img\fb-icon.svg"></a></li>
-                <li><a href="#" class="social-button3"><img src="img\insta-icon.svg"></a></li>
+                <li><a href="#" class="social-button1"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+                <li><a href="#" class="social-button2"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+                <li><a href="#" class="social-button3"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
               </ul>
               <b>Давайте дружить,это выгодно!</b>
               <p>Скидка 10% для друзей и социальных сетей.</p>
@@ -110,23 +111,23 @@
 
           <section class="communication">
           <p>НАПИШИТЕ НАМ</p>
-          <form  сlass="client" method="post" action="">
+          <form  class="modal-form" method="post" action="https://echo.htmlacademy.ru">
             <p><div class="col">
             <label for="client-name">Ваше имя:</label>
             <input type="text" name="name" id="client-name" placeholder="Имя Фамилия">
             </div>
             <div class="col">
-            <label for="your-name">Ваш е-mail:</label>
+            <label for="client-email">Ваш е-mail:</label>
             <input type="text" name="email" id="client-email" placeholder="email@example.com">
-            </div></p>
-            <p><label for="your-name">Текст письма:</label>
+            </div>
+            <p><label for="client-message">Текст письма:</label>
             <textarea name="message" id="client-message" cols="30" rows="10" placeholder="В свободной форме"></textarea></p>    
-            <p><button type="submit">ОТПРАВИТЬ</button></p>    
+            <p><button class="button-info" type="submit">ОТПРАВИТЬ</button></p>    
           </form>
         </section>  
         <div class="product-prices">
         <article class="price1">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>SEDONA</h2>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -135,7 +136,7 @@
         </article>
 
         <article class="price2">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>PINK APP</h2>
           <p>Продуктовый лендинг приложения для iOS и ANDROID</p>
@@ -144,7 +145,7 @@
         </article>
 
         <article class="price3">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>BARBERSHOP</h2>
           <p>Сайт салона красоты.
@@ -154,7 +155,7 @@
         </article>
 
         <article class="price4">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>Mischka</h2>
           <p>Интернет-магазин вязаных игрушек</p>
@@ -163,7 +164,7 @@
         </article>
 
         <article class="price5">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>A PLUS</h2>
           <p>Лендинг курсов повышения квалификации</p>
@@ -172,12 +173,13 @@
         </article>
 
         <article class="price6">
-          <img src="img\browser.svg">
+          <img src="img/browser.svg" width="360" height="40">
           <div class="h-box">
           <h2>КВАСТ</h2>
           <p>Промо-сайт производителя крафтового кваса</p>
           <a href="#" class="button button-buy">9900РУБ.</a>
-          </div>
-        </article> 
+        </div>
+        </article>
+      </div> 
     </body>
   </html>

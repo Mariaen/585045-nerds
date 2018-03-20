@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -28,48 +29,53 @@
         <h1 class="visually-hidden">Веб-студия Нердс</h1>
           <section class="slides">
             <div class="slider-slides">
-              <div class="slide1"
+              <div class="slide1">
                 <p><strong>Долго,дорого,скурпулезно.</strong></p>
                 <a href="#" class="button button-info">Узнать больше</a>
                 <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <img src="img\slide1.png" width="" height="" alt="картинка1">
+                <img src="img/slide1.png"  height="413" width="700" alt="картинка1"> 
               </div>
               <div class="slide2">
                 <p><strong>Любим математику как никто другой</strong></p>
                 <a href="#" class="button button-info">Узнать больше</a>
                 <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <img src="img\slide2.png" width="" height="" alt="картинка2">
+                <img src="img/slide2.png" width="700" height="413" alt="картинка2">
               </div>
               <div class="slide3">
                 <p><strong>Только ночь, только хардкор</strong></p>
                 <a href="#" class="button button-info">Узнать больше</a>
                 <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <img src="img\slide3.png" width="" height="" alt="картинка3">
+                <img src="img/slide3.png" width="700" height="413" alt="картинка3">
               </div>
             </div>
               <ul>
-              <li><button class=""></button>></li>
+              <li><input type="radio" name="slides" id="slide1" checked></li>
               <li><input type="radio" name="slides" id="slide2"></li>
               <li><input type="radio" name="slides" id="slide3"></li>
               </ul>
+            <div class="slider-controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+            </div>  
           </section>
           <section class="serviсe">
             <h2 class="visually-hidden">Услуги</h2>
               <ul class="serviсe-list">
                 <li>
-                  <img src="img\illustration-1.png" width=" " height="" alt="Веб-сайты">
+                  <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
                   <h3>Веб-сайты</h3>
                   <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                   <a href="#" class="button button-order1">Заказать</a>
                 </li>
                 <li>
-                  <img src="img\illustration-2.png" width=" " height=""  alt="Приложения">
+                  <img src="img/illustration-2.png" width="300" height="146"  alt="Приложения">
                   <h3>Приложения</h3>
                   <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                   <a href="#" class="button button-order2">Заказать</a>
                 </li>
                 <li>
-                  <img src="img\illustration-3.png" width=" " height="" alt="Презентации">
+                  <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
                   <h3>Презентации</h3>
                   <p>Вы даже не подозреваете,насколько вы изумительны!</p>
                   <a href="#" class="button button-order3">Заказать</a>
@@ -88,19 +94,19 @@
                   <li>Слайд-шоу и видео для корпоративных презентаций</li>
                 </ul>
               </div>
-              <div class="logotype">      
-              <div class="logo">
-                <img src="img\nerds-illustration.png" width=""  height=""  alt="Логотип Нердс">
-              </div class="statistical-data">   
+              <div class="logotype">     
+                <img src="img/nerds-illustration.png" width="360"  height="208"  alt="Логотип Нердс">
+              </div>
+              <div class="statistical-data">   
                 <b>С 2004 года любим точность во всем:</b>
                   <ul class="list-benefits">
-                    <li>146%
+                    <li>146<sup>%</sup>
                       <p>Уровень самоотдачи</p> 
                     </li>
-                    <li>100%
+                    <li>100<sup>%</sup>
                       <p>Соблюдение сроков</p> 
                     </li>
-                    <li>50%
+                    <li>50<sup>%</sup>
                       <p>Минимальная предоплата</p> 
                     </li>
                   </ul>
@@ -110,22 +116,22 @@
               <ul>
                 <li>
                   <a href="#" class="htmlacademy">
-                    <img src="img\logo-1.png"  width="" height="" alt="Логотип htmlacademy">
+                    <img src="img/logo-1.png"  width="260" height="180" alt="Логотип htmlacademy">
                   </a>
                 </li>
                 <li>
                   <a href="#" class="barberchop">
-                    <img src="img\logo-2.png"  width="" height="" alt="Логотип barberchop">
+                    <img src="img/logo-2.png"  width="260" height="180" alt="Логотип barberchop">
                   </a>
                 </li>
                 <li>
                   <a href="#" class="pink">
-                    <img src="img\logo-3.png"  width="" height="" alt="Логотип pink">
+                    <img src="img/logo-3.png"  width="260" height="180" alt="Логотип pink">
                   </a>
                 </li>
                 <li>
                   <a href="#" class="mischka">
-                    <img src="img\logo-4.png"  width="" height="" alt="Логотип mischka">
+                    <img src="img/logo-4.png"  width="260" height="180" alt="Логотип mischka">
                   </a>
                 </li>
               </ul>
@@ -139,14 +145,15 @@
                 <p>+7(812)2757575</p>
               <a class="button" href="">НАПИШИТЕ НАМ</a>
             </div>
-            <img src="img\Группа 1.png"  width="" height="" alt="Санкт-Петербург,ул.Б.Конюшенная,д. 19/8">  
+            <img src="img/Группа1.png"  width="1725" height="808" alt="Санкт-Петербург,ул.Б.Конюшенная,д. 19/8">  
             </section>     
             <div class="footer-bar">
             <ul class="footer-social">  
-              <li><a href="#" class="social-button1"><img src="img\vk-icon.svg"></a></li>
-              <li><a href="#" class="social-button2"><img src="img\fb-icon.svg"></a></li>
-              <li><a href="#" class="social-button3"><img src="img\insta-icon.svg"></a></li>
+              <li><a href="#" class="social-button1"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+              <li><a href="#" class="social-button2"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+              <li><a href="#" class="social-button3"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
             </ul>
+            </div>
             <div class="call">
               <b>Давайте дружить,это выгодно!</b>
               <p>Скидка 10% для друзей и социальных сетей.</p>
@@ -154,19 +161,19 @@
           </footer>
 
         <section class="communication">
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
           <p>НАПИШИТЕ НАМ</p>
-          <form  сlass="client" method="post" action="">
             <p><div class="col">
             <label for="client-name">Ваше имя:</label>
             <input type="text" name="name" id="client-name" placeholder="Имя Фамилия">
             </div>
             <div class="col">
-            <label for="your-name">Ваш е-mail:</label>
+            <label for="client-email">Ваш е-mail:</label>
             <input type="text" name="email" id="client-email" placeholder="email@example.com">
-            </div></p>
-            <p><label for="your-name">Текст письма:</label>
+            </div>
+            <p><label for="client-message">Текст письма:</label>
             <textarea name="message" id="client-message" cols="30" rows="10" placeholder="В свободной форме"></textarea></p>    
-            <p><button type="submit">ОТПРАВИТЬ</button></p>    
+            <p><button class="button-info" type="submit">ОТПРАВИТЬ</button></p>    
           </form>
         </section>  
   </body>
