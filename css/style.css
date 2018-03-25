@@ -13,8 +13,8 @@ body {
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: #000000;
-	background-color: #ffffff;
+	color: #000;
+	background-color: #fff;
 }
 a {
 	text-decoration: none;
@@ -35,10 +35,22 @@ a {
 .main-menu {
 	font-size: 16px;
 	line-height: 30px;
-	color: #000000;
+	color: #000;
 	background-color: #eee;
 	font-weight: 500;
 }
+.main-menu a {
+	color: #000;
+}
+.main-menu a:hover,
+.main-menu a:focus {     /*   ?????*/
+    color: #303030; 
+} 
+.main-menu a:active {
+	color: #a6a6a6;
+	border-bottom: #fb565a;
+}
+
 .site-menu {
 	list-style: none;
 }
@@ -155,30 +167,6 @@ a {
 	line-height: 22px;
 	font-weight: normal;
 }
-/*.communication p {
-	font-size: 45px;
-	line-height: 45px;
-	font-weight: 500;
-}
-.communication label {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 700;
-}
-.communication input {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: normal;
-	color: #a1a1a1;
-}
-
-.communication input:hover,
-.communication input:focus {
-	border: 2px solid #000;
-}
-.communication input:active {
-	border: 2px solid #e74246;
-}*/
 
 .modal-form input[type="text"] { 
   color: #d7dcde; 
@@ -187,7 +175,7 @@ a {
   color: #b4b9bb; 
 } 
 .modal-form input[type="text"]:focus { 
-  color: #000000; 
+  color: #000; 
 } 
 .modal-form input[type="text"]:invalid { 
   color: #e74246;
@@ -198,7 +186,7 @@ a {
 	background-image: url(img/close-cross.svg); 
 	background-repeat: no-repeat; 
 }
-.modal-close:hover { 
+.button-info:hover { 
   	color: #fb565a;
 } 
 .container h1 {
@@ -225,6 +213,7 @@ a {
 .features ul {
 	list-style: none;
 }
+display: none
 .features .button-gray:hover,
 .features .button-gray:focus {
 	color: #000;
@@ -233,13 +222,16 @@ a {
 .button-order3:active { 
 	color: #959595;
 	background-color: #d5d5d5;
-} {
+} 
 
-}
+
 .outline label {
 	font-size: 16px; 
     line-height: 20px; 
     color:#283136; 
+}
+.outline .options1 {
+	
 }
 .sort p {
 	font-size: 18px; 
@@ -251,6 +243,7 @@ a {
     line-height: 30px; 
     font-weight: 700;
     color: #000;
+    text-transform: uppercase;
 }
 .product-prices  p {
 	font-size: 16px; 
@@ -270,9 +263,6 @@ a {
 	
 		
 }
-.product-list ul{ 
-    list-style: none; 
-}
 .list-pages {
 	list-style: none;
 }
@@ -286,7 +276,7 @@ a {
 	 background-color: #e74246; 
 }
 .button-info:active { 
-	color: e37376;
+	color: #e37376;
 	background-color: #d7373b;
 }
 .button-order1 {
@@ -386,14 +376,21 @@ a {
 .footer-social a:active {
 	background: #d7373b;
 }
+
+       /*        слайдер     */
+
+
 .slider-slides {
-	width: 300%;
+background: #eee;	
+width: 300%;
+overflow: hidden;
 }
-.slider-slides img {
-	 float: left;
+.slider-slides .slide {
+  float: left;
+  width: 33.3333%;
 }
 .slides ul {
-	list-style: none;
+ list-style: none;
 }
 .slides{
     overflow: hidden;
@@ -401,17 +398,49 @@ a {
 .slider-controls {
     text-align: center;
 }
+
 .slider-controls label {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
      border: 4px solid white;
+    /* border-color: red;*/
 }
 #slide1:checked ~ .slider-controls label[for="slide1"],
 #slide2:checked ~ .slider-controls label[for="slide2"],
 #slide3:checked ~ .slider-controls label[for="slide3"] {
     background-color: #4d4d4d;
+ /*   border-color: blue;*/
+}
+
+#slide1:checked ~ .slider-slides {
+    transform: translate(0);
+}
+
+#slide2:checked ~ .slider-slides {
+    transform: translate(-33.3333%);
+}
+
+
+#slide3:checked ~ .slider-slides {
+    transform: translate(-66.6666%);
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #e74246;
+  border: 2px solid #e74246;
+  opacity: 1;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder  {
+  color: #e74246;
+  border: 2px solid #e74246;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #e74246;
+  border: 2px solid #e74246;
 }
 .option1 {
 	color: #283136;
@@ -419,4 +448,53 @@ a {
 .option1:hover {
 	color: #000;
 } 
+.outline input[type="radio"] { 
+  color: #b8b8b8; 
+  border: 2px solid #b8b8b8; 
+} 
+
+.outline input[type="radio"]:hover { 
+  color: #4d4d4d; 
+  border: 2px solid #4d4d4d; 
+} 
+
+.features input[type="checkbox"] { 
+  color: #b8b8b8; 
+} 
+input[type="checkbox"]:hover { 
+  color: #4d4d4d; 
+}
+
+
+
+ 
+.price1,
+.price2,
+.price3,
+.price4,
+.price5,
+.price6 { 
+  color: #e9e9e9; 
+  width: 360px;
+  height: 35px; 
+  background-image: url("../img/browser.svg"); 
+  background-position: top; 
+  background-repeat: no-repeat; 
+  opacity: 0.1; 
+} 
+
+
+
+
+
+
+
+.modal-close { 
+	background-image: url("img/close-cross.svg"); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+} 
+
+
+
 
