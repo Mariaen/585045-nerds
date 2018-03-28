@@ -146,6 +146,7 @@ a {
 }
 .footer-bar li {
 	list-style: none;
+	padding: 0;
 }
 .contact-box {
 	font-size: 16px;
